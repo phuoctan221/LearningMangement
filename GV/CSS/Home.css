@@ -1,0 +1,93 @@
+.lich {
+  flex: 1;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lich input[type="date"] {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+.lich input[type="date"]:hover {
+  border-color: #007bff;
+  background-color: #eef;
+}
+
+.lich input[type="date"]:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.lich .licha {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+.lich .licha .ngay {
+  margin: 0 20px;
+}
+.lich .licha .date-range,
+.lich .licha .current-date {
+  font-size: 15px;
+}
+
+.date-range {
+  display: flex;
+}
+
+.date-range .icon i {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 100px repeat(7, 1fr);
+  border-top: 1px solid #ddd;
+}
+
+.row {
+  display: contents;
+}
+
+.time-slot {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-size: 15px;
+}
+
+.day {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.event {
+  width: 100%;
+  height: 70px;
+  border: 1px solid #ddd;
+  background-color: #cfe7ff;
+  text-align: center;
+  font-size: 10px;
+  color: #000;
+  word-wrap: break-word;
+}

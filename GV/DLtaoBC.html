@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Management Chat</title>
+    <link rel="stylesheet" href="CSS/DLtaoBC.css" />
+    <link rel="stylesheet" href="CSS/Menu.css" />
+    <link rel="stylesheet" href="CSS/Headermenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="IMG/snapedit_1733386630677.png" alt="" />
+        <h1>Learning Management</h1>
+      </div>
+
+      <div class="icon">
+        <i class="fa-regular fa-bell" id="bell-icon"></i>
+        <div class="popup" id="popup">
+          <div>
+            <div class="content">
+              <h4>Dạy Online do mưa lớn ngày 05/11/2024</h4>
+              <p>Thời gian bắt đầu: 04/11/2024</p>
+              <p>Thời gian kết thúc: 04/11/2024</p>
+            </div>
+
+            <i class="fa-solid fa-delete-left a"></i>
+          </div>
+
+          <button id="close-popup">Close</button>
+        </div>
+        <i
+          class="fa-solid fa-arrow-right-from-bracket"
+          onclick="window.location.href='/index.html'"
+        ></i>
+      </div>
+    </header>
+    <div class="container">
+      <div class="Menu">
+        <div class="Avata">
+          <img src="IMG/GV.png" alt="" />
+          <p>Trung Thuan</p>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <img src="IMG/lich.png" alt="" /><a href="Home.html">Lịch dạy</a>
+            </li>
+            <li>
+              <img src="IMG/Dulieu.png" alt="" />
+              <a href="">Dữ liệu SV</a>
+              <ul class="menu-dulieu">
+                <li><a href="DLtaoBC.html">Tạo báo cáo</a></li>
+                <li><a href="GuiBC.html">Gửi báo cáo</a></li>
+                <li><a href="DLdiemSV.html">Điểm sinh viên</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="IMG/tinnhan.png" alt="" /><a href="Chat.html"
+                >Tin nhắn</a
+              >
+            </li>
+            <li>
+              <img src="IMG/tailieuday.png" alt="" /><a href="TLday.html"
+                >Tài liệu dạy</a
+              >
+            </li>
+            <li>
+              <img src="IMG/caidat.png" alt="" /><a href="">Cài đặt</a>
+              <ul class="menu-dulieu">
+                <li><a href="ThongTin.html">Xem thông tin</a></li>
+                <li><a href="DoiMK.html">Thay đổi mật khẩu</a></li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h3>Dữ liệu sinh viên >> Tạo báo cáo</h3>
+        <div class="content1">
+          <div class="a b">
+            <div class="Namhoc">
+              <p>Năm học</p>
+              <select id="year" name="year">
+                <option value="">Chọn năm học</option>
+                <option value="2024-2025">2024-2025</option>
+                <option value="2023-2024">2023-2024</option>
+                <option value="2022-2023">2022-2023</option>
+                <option value="2021-2022">2021-2022</option>
+                <option value="2020-2021">2020-2021</option>
+                <option value="2019-2020">2019-2020</option>
+              </select>
+            </div>
+            <div class="Hocky">
+              <p>Học kỳ</p>
+              <select id="semester" name="semester">
+                <option value="">Chọn học kỳ</option>
+                <option value="I">Học kỳ I</option>
+                <option value="II">Học kỳ II</option>
+                <option value="Hè">Học kỳ Hè</option>
+              </select>
+            </div>
+          </div>
+          <div class="a">
+            <p>Chọn lớp</p>
+            <select id="class" name="class">
+              <option value="">Chọn lớp</option>
+              <option value="AGIS">AGIS</option>
+              <option value="AIS">AIS</option>
+              <option value="AKIS">AKIS</option>
+              <option value="OIS">OIS</option>
+              <option value="KIS">KIS</option>
+              <option value="EIS">EIS</option>
+            </select>
+          </div>
+          <div class="a">
+            <p>Chọn mẫu báo cáo</p>
+            <select id="template" name="template">
+              <option value="">Chọn mẫu báo cáo</option>
+              <option value="Báo cáo điểm số">Báo cáo điểm số</option>
+              <option value="Báo cáo chuyên cần">Báo cáo chuyên cần</option>
+              <option value="Hoạt động ngoại khóa">Hoạt động ngoại khóa</option>
+            </select>
+          </div>
+          <div class="a">
+            <p>Chọn báo cáo</p>
+            <select id="fileType" name="fileType">
+              <option value="">Chọn báo cáo</option>
+              <option value="Word">Word</option>
+              <option value="PDF">PDF</option>
+              <option value="Excel">Excel</option>
+            </select>
+            <input type="file" id="fileInput" />
+          </div>
+          <div class="a noidung">
+            <p class="label">Nội dung</p>
+            <textarea
+              id="content"
+              placeholder="Nhập nội dung của bạn tại đây..."
+              maxlength="500"
+            ></textarea>
+            <small class="ghichu">Vui lòng nhập không quá 500 ký tự.</small>
+          </div>
+          <div class="button">
+            <button id="saveButton">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/Header.js"></script>
+    <script src="JS/DLtaoBC.js"></script>
+  </body>
+</html>

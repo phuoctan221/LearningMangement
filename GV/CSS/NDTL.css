@@ -1,0 +1,51 @@
+.content {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.content .a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #eaf4fc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
+  font-size: 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  padding-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.content .Learn {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #2c3e50;
+
+  text-align: center;
+  width: 400px;
+  margin: 15px auto;
+}
+
+.content .Learn a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.content .a:hover {
+  background: #3498db;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.content a {
+  text-decoration: none;
+  color: black;
+  padding-right: 300px;
+  margin-left: 20px;
+}

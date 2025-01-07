@@ -1,0 +1,81 @@
+.content {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.content .a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #eaf4fc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
+  font-size: 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  padding-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.Edit {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.Edit button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid black;
+}
+
+#cancelBtn {
+  display: none;
+}
+
+#cancelBtn:hover,
+#deleteBtn:hover {
+  background-color: #e0e0e0;
+}
+
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  margin: 10px 0;
+  display: flex;
+}
+
+.item input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.item input[type="file"] {
+  display: none;
+}
+
+.item input[type="checkbox"] {
+  display: none;
+}
+
+.item a {
+  color: #000000;
+  text-decoration: none;
+  margin: 10px 20px;
+}

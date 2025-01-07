@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Management Chat</title>
+    <link rel="stylesheet" href="CSS/ThongTin.css" />
+    <link rel="stylesheet" href="CSS/Menu.css" />
+    <link rel="stylesheet" href="CSS/Headermenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="IMG/snapedit_1733386630677.png" alt="" />
+        <h1>Learning Management</h1>
+      </div>
+
+      <div class="icon">
+        <i class="fa-regular fa-bell" id="bell-icon"></i>
+        <div class="popup" id="popup">
+          <div>
+            <div class="content">
+              <h4>Dạy Online do mưa lớn ngày 05/11/2024</h4>
+              <p>Thời gian bắt đầu: 04/11/2024</p>
+              <p>Thời gian kết thúc: 04/11/2024</p>
+            </div>
+
+            <i class="fa-solid fa-delete-left a"></i>
+          </div>
+
+          <button id="close-popup">Close</button>
+        </div>
+        <i
+          class="fa-solid fa-arrow-right-from-bracket"
+          onclick="window.location.href='/index.html'"
+        ></i>
+      </div>
+    </header>
+    <div class="container">
+      <div class="Menu">
+        <div class="Avata">
+          <img src="IMG/GV.png" alt="" />
+          <p>Trung Thuan</p>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <img src="IMG/lich.png" alt="" /><a href="Home.html">Lịch dạy</a>
+            </li>
+            <li>
+              <img src="IMG/Dulieu.png" alt="" />
+              <a href="">Dữ liệu SV</a>
+              <ul class="menu-dulieu">
+                <li><a href="DLtaoBC.html">Tạo báo cáo</a></li>
+                <li><a href="GuiBC.html">Gửi báo cáo</a></li>
+                <li><a href="DLdiemSV.html">Điểm sinh viên</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="IMG/tinnhan.png" alt="" /><a href="Chat.html"
+                >Tin nhắn</a
+              >
+            </li>
+            <li>
+              <img src="IMG/tailieuday.png" alt="" /><a href="TLday.html"
+                >Tài liệu dạy</a
+              >
+            </li>
+            <li>
+              <img src="IMG/caidat.png" alt="" /><a href="">Cài đặt</a>
+              <ul class="menu-dulieu">
+                <li><a href="ThongTin.html">Xem thông tin</a></li>
+                <li><a href="DoiMK.html">Thay đổi mật khẩu</a></li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h3>Thông Tin Người Dùng</h3>
+        <div class="contenta">
+          <div class="ThongTin">
+            <div class="Sua" onclick="window.location.href='EditTT.html'">
+              <i class="fa-solid fa-pen-nib"></i>
+              <p>Sửa</p>
+            </div>
+
+            <p>
+              Ngành dạy:
+              <b>Introduction to Network & Telecommunications Technology</b>
+            </p>
+            <p>Mã Giáo viên: <span>01111111</span></p>
+            <p>Giới tính: <span>Nam</span></p>
+            <p>Ngày sinh: <span>27/09/1976</span></p>
+            <p>CCCD: <span>01234567836</span></p>
+
+            <p>Tỉnh/Thành phố: <span id="location-view">Đà Nẵng</span></p>
+            <p>Quốc gia: <b>Việt Nam</b></p>
+            <p>
+              Email: <span id="email-view"> nguyentrungthuan@gmail.com</span>
+            </p>
+            <p>Điện thoại: <span id="phone-view">0905558758</span></p>
+            <p>
+              Nơi đang sinh sống: <span id="location-living-view">Đà Nẵng</span>
+            </p>
+          </div>
+          <div class="avatar-container">
+            <img src="IMG/avata.png" id="avatar-img" alt="Avatar" />
+            <h3>Nguyễn Trung Thuận</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS/ThongTin.js"></script>
+    <script src="JS/Header.js"></script>
+  </body>
+</html>

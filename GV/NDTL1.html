@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Management Chat</title>
+    <link rel="stylesheet" href="CSS/NDTL1.css" />
+    <link rel="stylesheet" href="CSS/Menu.css" />
+    <link rel="stylesheet" href="CSS/Headermenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="IMG/snapedit_1733386630677.png" alt="" />
+        <h1>Learning Management</h1>
+      </div>
+
+      <div class="icon">
+        <i class="fa-regular fa-bell" id="bell-icon"></i>
+        <div class="popup" id="popup">
+          <div>
+            <div class="content">
+              <h4>Dạy Online do mưa lớn ngày 05/11/2024</h4>
+              <p>Thời gian bắt đầu: 04/11/2024</p>
+              <p>Thời gian kết thúc: 04/11/2024</p>
+            </div>
+
+            <i class="fa-solid fa-delete-left a"></i>
+          </div>
+
+          <button id="close-popup">Close</button>
+        </div>
+        <i
+          class="fa-solid fa-arrow-right-from-bracket"
+          onclick="window.location.href='/index.html'"
+        ></i>
+      </div>
+    </header>
+    <div class="container">
+      <div class="Menu">
+        <div class="Avata">
+          <img src="IMG/GV.png" alt="" />
+          <p>Trung Thuan</p>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <img src="IMG/lich.png" alt="" /><a href="Home.html">Lịch dạy</a>
+            </li>
+            <li>
+              <img src="IMG/Dulieu.png" alt="" />
+              <a href="">Dữ liệu SV</a>
+              <ul class="menu-dulieu">
+                <li><a href="DLtaoBC.html">Tạo báo cáo</a></li>
+                <li><a href="GuiBC.html">Gửi báo cáo</a></li>
+                <li><a href="DLdiemSV.html">Điểm sinh viên</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="IMG/tinnhan.png" alt="" /><a href="Chat.html"
+                >Tin nhắn</a
+              >
+            </li>
+            <li>
+              <img src="IMG/tailieuday.png" alt="" /><a href="TLday.html"
+                >Tài liệu dạy</a
+              >
+            </li>
+            <li>
+              <img src="IMG/caidat.png" alt="" /><a href="">Cài đặt</a>
+              <ul class="menu-dulieu">
+                <li><a href="ThongTin.html">Xem thông tin</a></li>
+                <li><a href="DoiMK.html">Thay đổi mật khẩu</a></li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h3>Tài liệu dạy >> Bài giảng</h3>
+        <div class="a">
+          <i class="fa-solid fa-book"></i>
+          <p>CMU-SE 214 AGIS (2024F)</p>
+        </div>
+        <div class="Edit">
+          <button id="addBtn">Thêm</button>
+          <button id="editBtn">Sửa</button>
+          <button id="saveBtn" style="display: none">Lưu</button>
+          <button id="deleteBtn">Xóa</button>
+        </div>
+
+        <div id="itemsContainer"></div>
+      </div>
+    </div>
+    <script src="JS/NDTL1.js"></script>
+    <script src="JS/Header.js"></script>
+  </body>
+</html>
